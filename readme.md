@@ -6,6 +6,11 @@
 
 Complete the questions contained in index.js.
 
+### Reading
+
+- [Chapter 4, Objects and Arrays, Eloquent JS](http://eloquentjavascript.net/04_data.html)
+- [Chapter 5, Higher-order Functions](http://eloquentjavascript.net/05_higher_order.html)
+
 ### Due
 
 Monday, July 4, 2016
