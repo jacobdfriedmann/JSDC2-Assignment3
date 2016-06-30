@@ -55,8 +55,12 @@
  * Q8: Create an Object that has each of the above functions as values.
  *
  * var answers = {
- *   q1: ?,
+ *   q0: ?,
  *   ...
  * };
- * 
+ *
  */
+
+ /**
+  * Q9: Use the Object from Q8 to call all of the functions you've created.
+  */
