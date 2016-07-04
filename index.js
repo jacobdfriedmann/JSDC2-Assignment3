@@ -97,7 +97,7 @@ function reverseString(inputString) {
  */
 function maxArray(numArray) {
   if (typeof numArray === 'object') {
-    maxNum = 0;
+    var maxNum = 0;
     numArray.forEach(function (num) {
       if (typeof num === 'number') {
         maxNum = (num > maxNum) ? num : maxNum;
