@@ -97,7 +97,12 @@ function reverseString (){
  * Q7: Write a function called `maxArray` that has one Array of Numbers parameter and returns
  * the largest number in the Array. Use a `forEach` loop.
  */
-
+var numbersArray = [20,67,49,93];
+maxArray.forEach(function (numbersArray) {
+  var x = //not sure where to go from here...
+  console.log(message);
+   }
+ }
 
 /**
  * Q8: Create an Object that has each of the above functions as values.
