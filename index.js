@@ -172,20 +172,29 @@ function reverseString(stringParameter) {
 * function as the parameter array in the forEach loop, but this would mean that the forEach 
 * loop would still need a parameter function elsewhere defined. 
 *
-* After reviewing the class notes on the forEach loop, I was able to finallu figure it out.  
+* After reviewing the class notes on the forEach loop, I was able to finally figure it out.  
 */
 
 var myArray = [17, 38, 94, 1, 923, 375, 4];
 
 function maxArray(arrayOfNumbers) {
 	var greatestValue = 0;
+	arrayOfNumbers.forEach(function(num) {
+		if(num > greatestValue){
+	        greatestValue = num;
+	    }
+	});
+/*
 	for (var i = 0; i < arrayOfNumbers.length; i++) {
 	    if(arrayOfNumbers[i] > greatestValue){
 	        greatestValue = arrayOfNumbers[i];
 	     }
 	}
+*/
 	return greatestValue;
 }
+
+
 
 //console.log(maxArray(myArray));
 
