@@ -87,8 +87,12 @@ function getFullName (){
  * the String reversed. Hint: look up `.split()`
  */
 
-ar string = 'asdfghjkl';
-var stringReverse = str.split('').reverse().join(''); 
+var string = 'Independence Day';
+var stringRev = string.split('').reverse().join('');
+
+function reverseString (){
+	return (stringRev);
+} 
 /**
  * Q7: Write a function called `maxArray` that has one Array of Numbers parameter and returns
  * the largest number in the Array. Use a `forEach` loop.
