@@ -34,6 +34,17 @@
  * Q2: Write a function called `longer` that has two String parameters and returns
  * the String that is longer.
  */
+var x = 'donkey';
+var y = 'bunny';
+
+ function longer (x,y){
+ 	if ((x.length) > (y.length)){
+ 		return (x);
+
+ 	} else if ((y.length) > (x.length)){
+ 		return (y);
+ 	}
+ }
 
 
 /**
@@ -57,14 +68,21 @@
  *
  * And returns the first and last name concatenated together (i.e. 'Bob Evans').
  */
-
+ var fulllName = {
+ 		firstName: 'Bob',
+ 		lastName: 'Evans'
+ }
+function getFullName (){
+	console.log (fulllName.firstName.lastName);
+}
 
 /**
  * Q6: Write a function called `reverseString` that has a String parameter and returns
  * the String reversed. Hint: look up `.split()`
  */
 
-
+ar string = 'asdfghjkl';
+var stringReverse = str.split('').reverse().join(''); 
 /**
  * Q7: Write a function called `maxArray` that has one Array of Numbers parameter and returns
  * the largest number in the Array. Use a `forEach` loop.
