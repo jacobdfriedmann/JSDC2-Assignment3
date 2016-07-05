@@ -113,11 +113,12 @@ function reverseString(a) {
  */
 
  var answers = {
-   q1: countdown,
-   q2: max,
-   q3: longer,
-   q4: isEven,
-   q5: getAreaOfCircle,
+   q0: countdown,
+   q1: max,
+   q2: longer,
+   q3: isEven,
+   q4: getAreaOfCircle,
+   q5: getFullName,
    q6: reverseString,
    q7: maxArray
  };
@@ -127,19 +128,25 @@ function reverseString(a) {
   */
 
 // Call countdown
-answers.q1();
+answers.q0();
 
 // Call max
-console.log(answers.q2(2, 3));
+console.log(answers.q1(2, 3));
 
 // Call longer
-console.log(answers.q3('hello', 'world!'));
+console.log(answers.q2('hello', 'world!'));
 
 // Call isEven
-console.log(answers.q4(9));
+console.log(answers.q3(9));
 
 // Call getAreaOfCircle
-console.log(answers.q5(6));
+console.log(answers.q4(6));
+
+// Call getFullName
+console.log(answers.q5({
+  firstName: 'Jacob',
+  lastName: 'Friedmann'
+}));
 
 // Call reverseString
 console.log(answers.q6('dlrow olleh'));
