@@ -147,7 +147,6 @@ function maxArray(arr){
 //console.log(maxArray(bigTime));
 	
 
-
 /**
  * Q8: Create an Object that has each of the above functions as values.
  *
@@ -157,6 +156,76 @@ function maxArray(arr){
  * };
  *
  */
+var answers = {
+    q0:function(){
+ 	var count=11;
+ 	while(count>0){
+ 		if(count>1){
+ 		count-=1;
+ 		console.log(count);
+ 		}else{
+ 		count-=1;
+ 		console.log("Blast Off!");
+ 		};
+ 		}
+	},
+    q1:function(a,b){
+ 	if(a>b){
+ 		return a;
+
+ 	}else if(b>a){
+ 		return b;
+
+ 	}else{
+ 		return a;
+ 	}
+ },
+    q2:function(a,b){
+	if(a.length>b.length){
+		return a;
+	}else if(b.length>a.length){
+		return b;
+	}else{
+		return "Both strings are the same length"
+	}
+},
+    q3:function(a){
+	if(a%2===0){
+		return true;
+	}else{
+		return false;
+	}
+},
+    q4:function(radius){
+	return Math.PI*radius*radius;
+},
+    q5:function(person){
+	console.log(person.firstName+" "+person.lastName);
+},
+    q6:function(a){
+	//split up string a, turning it into an array
+	b = a.split("");
+	//reverse array b
+	c = b.reverse();
+	//join method
+	return c.join("");
+},
+    q7:function(arr){
+	var bigOne = arr[0];
+	for(i in arr){
+		var j = parseInt(i)+1;
+		if(bigOne<arr[j]){
+			bigOne=arr[j];
+		}else{
+			continue;
+		}
+
+	}
+	return bigOne;
+}
+   
+   
+  };
 
  
 
@@ -164,3 +233,11 @@ function maxArray(arr){
  /**
   * Q9: Use the Object from Q8 to call all of the functions you've created.
   */
+answers.q0();
+console.log(answers.q1(22,45));
+console.log(answers.q2("hi","hello"));
+console.log(answers.q3(5));
+console.log(answers.q4(6));
+answers.q5(Person);
+console.log(answers.q6("Independence"));
+console.log(answers.q7([-1,2,4,56,5]));
