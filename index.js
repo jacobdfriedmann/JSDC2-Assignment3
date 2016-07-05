@@ -19,7 +19,7 @@
  * Q1: Write a function called `max` that has two Number parameters and returns
  * the larger of the two.
  */
- function max (x,y){
+ function max (x,y){ 
  	if (x >= y){
 	return (x);
  	} else if (y >= x){
@@ -51,6 +51,13 @@ var y = 'bunny';
  * Q3: Write a function called `isEven` that has one Number parameter and returns `true` if
  * if the number is even and `false` otherwise.
  */
+ function isEven (num) {
+ 	if (num % 2 === 0) {
+ 		return true;
+ 	}else{
+ 		return false;
+ 	}
+ }
 
  /**
   * Q4: Write a function called `getAreaOfCircle` that has a Number parameter
