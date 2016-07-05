@@ -178,18 +178,13 @@ function reverseString(stringParameter) {
 var myArray = [17, 38, 94, 1, 923, 375, 4];
 
 function maxArray(arrayOfNumbers) {
-	function forEach(arrayOfNumbers, returnGreatestValue) {
-		var greatestValue = 0;
-		for (var i = 0; i < arrayOfNumbers.length; i++) {
-			returnGreatestValue(arrayOfNumbers[i]);
-		}
+	var greatestValue = 0;
+	for (var i = 0; i < arrayOfNumbers.length; i++) {
+	    if(arrayOfNumbers[i] > greatestValue){
+	        greatestValue = arrayOfNumbers[i];
+	     }
 	}
-	function returnGreatestValue(x) {
-		if(x > greatestValue) {
-			greatestValue = x;
-		return greatestValue;
-		}
-	}
+	return greatestValue;
 }
 
 //console.log(maxArray(myArray));
@@ -205,57 +200,15 @@ function maxArray(arrayOfNumbers) {
  */
 
 var answers = {
-	q0: 
-	function countdown() {
-		for (blastOff = 10; blastOff >= 0; blastOff--) {
-			blastOff > 0 ? console.log(blastOff) : console.log('Blast Off!');
-		}
-	},
-	q1:
-	function max(numOne, numTwo) {
-		return numOne > numTwo ? numOne : numTwo;
-
-	/**	
-	* Or as an if/else statement:
-	*	if (numOne > numTwo) {
-	*		return numOne;
-	*	} else {
-	*		return numTwo;
-	*	}
-	*/
-
-	},
-	q2:
-	function longer(stringOne, stringTwo) {
-		return stringOne.length > stringTwo.length ? stringOne : stringTwo;
-	},
-	q3:
-	function isEven(x) {
-		return x % 2 === 0;
-	},
-	q4:
-	function getAreaOfCircle(r) {
-		return Math.PI * Math.pow(r, 2);
-	},
-	q5:
-	function getFullName(object) {
-		return object.firstName + ' ' + object.lastName;
-	},
-	q6:
-	function reverseString(stringParameter) {
-		return stringParameter.split('').reverse().join('');
-	},
-	q7:
-	function maxArray(arrayOfNumbers) {
-		var greatestValue = 0;
-		for (var i = 0; i < arrayOfNumbers.length; i++) {
-		    if(arrayOfNumbers[i] > greatestValue){
-		        greatestValue = arrayOfNumbers[i];
-		     }
-		}
-		return greatestValue;
-	},
-}
+	q0: countdown,
+	q1: max,
+	q2: longer,
+	q3: isEven,
+	q4: getAreaOfCircle,
+	q5: getFullName,
+	q6: reverseString,
+	q7: maxArray
+};
 
  /**
   * Q9: Use the Object from Q8 to call all of the functions you've created.
