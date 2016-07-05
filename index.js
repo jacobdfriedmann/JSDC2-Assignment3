@@ -56,7 +56,13 @@ var y = 'bunny';
   * Q4: Write a function called `getAreaOfCircle` that has a Number parameter
   * (the circle's radius) and returns the surface area.
   */
+  var radius = 2;
 
+  function getAreaOfCircle (){
+  	(math.PI(radius)**2);
+  	return (a);
+  }
+var a = getAreaOfCircle();
 
 /**
  * Q5: Write a function called `getFullName` that has an Object parameter, of the form:
@@ -73,7 +79,7 @@ var y = 'bunny';
  		lastName: 'Evans'
  }
 function getFullName (){
-	console.log (fulllName.firstName.lastName);
+	console.log (fullName.concat(fulllName.firstName.lastName));
 }
 
 /**
