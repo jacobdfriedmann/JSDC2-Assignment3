@@ -1,31 +1,75 @@
 /**
  * Q0: Write a function called `countdown` that counts down from 10 on the console and
  * then logs "Blast Off!"
- */
+ */ 
+ function countDown (){
+ 	var numbers = [1,2,3,4,5,6,7,8,9,10]
+ 	for (var i = 0; i < numbers.length; i--) {
+   var numbers = numbers[i];
+   var message = 'Blast Off!';
+   
+ }
+ countdown();
+ console.log(message);
+
+ }
 
 
 /**
  * Q1: Write a function called `max` that has two Number parameters and returns
  * the larger of the two.
  */
+ function max (x,y){ 
+ 	if (x >= y){
+	return (x);
+ 	} else if (y >= x){
+	return (y);
+ 	}
+ }
+
+ max();
 
 
 /**
  * Q2: Write a function called `longer` that has two String parameters and returns
  * the String that is longer.
  */
+var x = 'donkey';
+var y = 'bunny';
+
+ function longer (x,y){
+ 	if ((x.length) > (y.length)){
+ 		return (x);
+
+ 	} else if ((y.length) > (x.length)){
+ 		return (y);
+ 	}
+ }
 
 
 /**
  * Q3: Write a function called `isEven` that has one Number parameter and returns `true` if
  * if the number is even and `false` otherwise.
  */
+ function isEven (num) {
+ 	if (num % 2 === 0) {
+ 		return true;
+ 	}else{
+ 		return false;
+ 	}
+ }
 
  /**
   * Q4: Write a function called `getAreaOfCircle` that has a Number parameter
   * (the circle's radius) and returns the surface area.
   */
+  var radius = 2;
 
+  function getAreaOfCircle (){
+  	(math.PI(radius)**2);
+  	return (a);
+  }
+var a = getAreaOfCircle();
 
 /**
  * Q5: Write a function called `getFullName` that has an Object parameter, of the form:
@@ -37,19 +81,35 @@
  *
  * And returns the first and last name concatenated together (i.e. 'Bob Evans').
  */
-
+ var fulllName = {
+ 		firstName: 'Bob',
+ 		lastName: 'Evans'
+ }
+function getFullName (){
+	console.log (fullName.concat(fulllName.firstName.lastName));
+}
 
 /**
  * Q6: Write a function called `reverseString` that has a String parameter and returns
  * the String reversed. Hint: look up `.split()`
  */
 
+var string = 'Independence Day';
+var stringRev = string.split('').reverse().join('');
 
+function reverseString (){
+	return (stringRev);
+} 
 /**
  * Q7: Write a function called `maxArray` that has one Array of Numbers parameter and returns
  * the largest number in the Array. Use a `forEach` loop.
  */
-
+var numbersArray = [20,67,49,93];
+maxArray.forEach(function (numbersArray) {
+  var x = //not sure where to go from here...
+  console.log(message);
+   }
+ }
 
 /**
  * Q8: Create an Object that has each of the above functions as values.
