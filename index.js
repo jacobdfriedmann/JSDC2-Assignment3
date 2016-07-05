@@ -1,13 +1,33 @@
 /**
  * Q0: Write a function called `countdown` that counts down from 10 on the console and
  * then logs "Blast Off!"
- */
+ */ 
+ function countDown (){
+ 	var numbers = [1,2,3,4,5,6,7,8,9,10]
+ 	for (var i = 0; i < numbers.length; i--) {
+   var numbers = numbers[i];
+   var message = 'Blast Off!';
+   
+ }
+ countdown();
+ console.log(message);
+
+ }
 
 
 /**
  * Q1: Write a function called `max` that has two Number parameters and returns
  * the larger of the two.
  */
+ function max (x,y){
+ 	if (x >= y){
+	return (x);
+ 	} else if (y >= x){
+	return (y);
+ 	}
+ }
+
+ max();
 
 
 /**
