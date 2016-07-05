@@ -91,7 +91,6 @@ function maxArray(arrayOfNumbers) {
 	}
 	console.log(largest);
 }
-}
 
 /**
  * Q8: Create an Object that has each of the above functions as values.
