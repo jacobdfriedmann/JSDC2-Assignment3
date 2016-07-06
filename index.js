@@ -97,10 +97,10 @@ function reverseString(inputString) {
  */
 function maxArray(numArray) {
   if (typeof numArray === 'object') {
-    var maxNum = 0;
+    var maxNum; //var maxNum = 0; better to set to first element of array, because all may be negative, but since I check if number, best left undefined
     numArray.forEach(function (num) {
       if (typeof num === 'number') {
-        maxNum = (num > maxNum) ? num : maxNum;
+        maxNum = (maxNum === undefined) ? num : (num > maxNum) ? num : maxNum;
       }
     });
     return maxNum;
